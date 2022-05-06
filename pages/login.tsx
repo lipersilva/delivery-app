@@ -33,7 +33,7 @@ const Login: NextPage = () => {
             <div className="block text-center p-6">
               <Link href="/forgot">
                 <a className="mt-6 text-center text-slate-600 mb-6 hover:text-slate-900">
-                  Recuperar Senha
+                  Esqueceu sua senha?
                 </a>
               </Link>
             </div>
