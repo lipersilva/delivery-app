@@ -1,0 +1,6 @@
+
+.button {
+  @apply text-xl leading-8 h-16 w-full;
+  border-radius :12px;
+  @apply hover:opacity-70
+}
