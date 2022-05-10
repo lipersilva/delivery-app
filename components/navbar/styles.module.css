@@ -1,0 +1,11 @@
+.navbar{
+  display:flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.inputSearch {
+  background-color: #F7F7F7;
+  outline: none;
+  @apply leading-6 h-12 max-w-sm rounded-lg w-full;
+}
