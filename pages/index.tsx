@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
-import { PageHead } from '../components'
+import { Categories, Highlights, Navbar, PageHead, Sidebar } from '../components'
 
 
 const Home: NextPage = () => {
@@ -10,14 +10,13 @@ const Home: NextPage = () => {
       <PageHead title="Home" description="Sistema de Delivery" keywords="delivery, food"/>
 
 
-      <div className= "">
-        <h1>Home</h1>
-        <Link href="/signup">
-          <a>Cadastro</a>
-        </Link>
-        <Link href="/login">
-          <a>Login</a>
-        </Link>
+      <div className= "container m-auto flex">
+        <Sidebar/>
+        <div className= "grow p-8 " >
+          <Navbar/>
+          <Categories/>
+          <Highlights/>
+        </div>
       </div>
     </>
   )
