@@ -1,0 +1,6 @@
+export * from './icon-fire'
+export * from './icon-knife'
+export * from './icon-map'
+export * from './icon-motorcycle'
+export * from './icon-wallet'
+export * from './icon-store'
