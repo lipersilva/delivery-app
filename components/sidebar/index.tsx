@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 import Styles from './styles.module.css'
+import { IconBase } from '../icon'
 
 export const Sidebar = () => {
   return (
@@ -15,7 +16,9 @@ export const Sidebar = () => {
         <li className={Styles.active}>
           <Link href="/">
             <a>
-              <span>[icon]</span>
+              <span>
+                <IconBase iconName="home" color="#A3A3A4" />
+              </span>
               Home
             </a>
           </Link>
@@ -23,7 +26,8 @@ export const Sidebar = () => {
         <li>
           <Link href="/exporar">
             <a>
-              <span>[icon]</span>
+              <span><IconBase iconName="feed" color="#A3A3A4" /></span>
+              
               Explorar
             </a>
           </Link>
@@ -31,7 +35,7 @@ export const Sidebar = () => {
         <li>
           <Link href="/favoritos">
             <a>
-              <span>[icon]</span>
+              <span><IconBase iconName="bookmark" color="#A3A3A4"/></span>
               Favoritos
             </a>
           </Link>
@@ -39,7 +43,7 @@ export const Sidebar = () => {
         <li>
           <Link href="/">
             <a>
-              <span>[icon]</span>
+              <span><IconBase iconName="document" color="#A3A3A4"/></span>
               Pedidos
             </a>
           </Link>
@@ -47,7 +51,7 @@ export const Sidebar = () => {
         <li>
           <Link href="/">
             <a>
-              <span>[icon]</span>
+              <span><IconBase iconName="mail" color="#A3A3A4" /></span>
               Mensagens
             </a>
           </Link>
@@ -55,7 +59,7 @@ export const Sidebar = () => {
         <li>
           <Link href="/">
             <a>
-              <span>[icon]</span>  
+              <span><IconBase iconName="gear" color="#A3A3A4" /></span>
               Configurações
             </a>
           </Link>
