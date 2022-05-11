@@ -27,7 +27,7 @@ const Login: NextPage = () => {
               placeholder="Informe a senha" 
               type="password"  
             />
-            <Button className="bg-indigo-50 w-full p-4  text-xl text-indigo-600 ">
+            <Button className="bg-indigo-200 text-xl text-indigo-600 ">
               Login
             </Button>
             <div className="block text-center p-6">

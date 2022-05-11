@@ -3,7 +3,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* 
-body, html {
-  color: #626264;
-} */
+
+@layer base {
+  h1, h2, h3 {
+    color: #182135;
+  }
+  p, a {
+    color: #626264;
+  }
+}

@@ -14,7 +14,7 @@ const SingUp: NextPage = () => {
             <h1 className="font-bold text-4xl mb-3">
               Criar uma conta
             </h1>
-            <p className="text-slate-700 mb-14">
+            <p className="mb-14">
               Por favor crie uma conta para continuar utilizando os nossos serviços.
             </p>
             <InputText 
