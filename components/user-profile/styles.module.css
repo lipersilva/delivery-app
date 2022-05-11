@@ -1,0 +1,32 @@
+.userProfile{
+  display: flex; 
+  justify-content: space-between;
+}
+
+.userData{
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 15px;
+}
+
+.userData h3 {
+  line-height: 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.userData p {
+  line-height: 1rem;
+  font-size: 0.68rem;
+  color: #626264;
+  margin-bottom: 0;
+}
+
+.button {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
