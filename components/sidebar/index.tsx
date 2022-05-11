@@ -2,15 +2,17 @@ import Link from 'next/link';
 import React from 'react';
 import Styles from './styles.module.css'
 import { IconBase } from '../icon'
+import { UserProfile } from '../user-profile';
+import Image from 'next/image';
 
 export const Sidebar = () => {
   return (
     <div className={Styles.sidebar}>
       <div className={Styles.header}>
-        <p>
-          <span>[icon]</span>
-          Nibble
-        </p>
+          <span>
+            <Image src="/logo.png" width={40} height={32} alt="Delivery App " />
+          </span>
+          <h3>Nibble</h3>
       </div>
       <ul className={Styles.menu}>
         <li className={Styles.active}>
@@ -24,7 +26,7 @@ export const Sidebar = () => {
           </Link>
         </li>
         <li>
-          <Link href="/exporar">
+          <Link href="/explorar">
             <a>
               <span><IconBase iconName="feed" color="#A3A3A4" /></span>
               
@@ -67,7 +69,7 @@ export const Sidebar = () => {
       </ul>
       <div className={Styles.footer}>
         <div>
-          componente usuário
+          <UserProfile/>
         </div>
       </div>
       <p className="text-gray-100">Sidebar</p>
