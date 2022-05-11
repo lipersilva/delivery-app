@@ -1,4 +1,18 @@
-import { IconFire, IconWallet, IconMotorcycle, IconKnife, IconStore, IconMap } from "../icon-family";
+import { 
+  IconFire, 
+  IconWallet, 
+  IconMotorcycle, 
+  IconKnife, 
+  IconStore, 
+  IconMap, 
+  IconBookmark, 
+  IconDocument, 
+  IconFeed, 
+  IconGear, 
+  IconMail, 
+  IconHome,
+  IconArrowTopDown
+} from "../icon-family";
 
 type IconBaseProps = {
   size?: string | number;
@@ -27,6 +41,27 @@ export const IconBase = ({iconName, size, color}: IconBaseProps):JSX.Element => 
       break;
     case "map":
       IconComponent = <IconMap size={size} color={color}/>;
+      break;
+    case "bookmark":
+      IconComponent = <IconBookmark size={size} color={color}/>;
+      break;
+    case "document":
+      IconComponent = <IconDocument size={size} color={color}/>;
+      break;
+    case "feed":
+      IconComponent = <IconFeed size={size} color={color}/>;
+      break;
+    case "gear":
+      IconComponent = <IconGear size={size} color={color}/>;
+      break;
+    case "mail":
+      IconComponent = <IconMail size={size} color={color}/>;
+      break;
+    case "home":
+      IconComponent = <IconHome size={size} color={color}/>;
+      break;
+    case "arrowTopDown":
+      IconComponent = <IconArrowTopDown size={size} color={color}/>;
       break;
   
     default: 
