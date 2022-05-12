@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 import { Category } from '../category';
+import { IconArrowRight } from '../icon-family';
 import Styles from './styles.module.css'
 
 export const Categories = () => {
@@ -44,10 +45,13 @@ export const Categories = () => {
   ];
   return (
     <div>
-      <div className="flex">
-        <h2 className="grow font-bold mb-8">Explorar Categorias</h2>
+      <div className={Styles.header}>
+        <h2>Explorar Categorias</h2>
         <Link href="./categories" >
-          <a className="font-bold">Ver todas</a>
+          <a>
+            Ver todas
+            <IconArrowRight size="12" color="#503E9D"/> 
+          </a>
         </Link>
       </div>
       <div className="flex gap-6 justify-between">
@@ -55,7 +59,6 @@ export const Categories = () => {
           <Category key={category.name} {...category} /> 
         ))}
       </div>
-      
     </div>
-  )
+  );
 }
