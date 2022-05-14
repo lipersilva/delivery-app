@@ -36,12 +36,12 @@ export const Categories = () => {
       iconName: "store",
       backgroundSection:"#503E9D"
     },
-    // {
-    //   name: "Mais próximos",
-    //   legend: "44+ opções",
-    //   iconName: "map",
-    //   backgroundSection:"#FACD5D"
-    // },
+    {
+      name: "Mais próximos",
+      legend: "44+ opções",
+      iconName: "map",
+      backgroundSection:"#FACD5D"
+    },
   ];
   return (
     <div className="mb-12">
@@ -54,7 +54,7 @@ export const Categories = () => {
           </a>
         </Link>
       </div>
-      <div className="flex gap-6 justify-between">
+      <div className="flex gap-8 justify-between">
         {categories.map((category)=>(
           <Category key={category.name} {...category} /> 
         ))}
