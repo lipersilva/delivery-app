@@ -11,7 +11,7 @@ export const Highlights = () => {
       brandUrl:"/brands/burguer-king.svg",
       rate: 4.5,
       food: "Burguer",
-      comments: "(1.873)",
+      comments: 1.873,
       price: 1,
       bonus: "Entrega grátis",
       distance: 4.3
@@ -21,7 +21,7 @@ export const Highlights = () => {
       brandUrl:"/brands/mcdonalds.svg",
       rate: 4.1,
       food: "Burguer",
-      comments: "(20.359)",
+      comments: 20.359,
       price: 1,
       bonus: "Entrega grátis",
       distance: 9.0
@@ -31,7 +31,7 @@ export const Highlights = () => {
       brandUrl:"/brands/dominos-pizza.svg",
       rate: 5.0,
       food: "Pizza",
-      comments: "(736)",
+      comments: 736,
       price: 2,
       bonus: "Compre 2 pague 1",
       distance: 2.8
@@ -41,7 +41,7 @@ export const Highlights = () => {
       brandUrl:"/brands/carrows.svg",
       rate: 4.71,
       food: "Peixe",
-      comments: "(736)",
+      comments: 736,
       price: 3,
       bonus: "Entrega Gratis",
       distance: 0.3
@@ -51,7 +51,7 @@ export const Highlights = () => {
       brandUrl:"/brands/kfc.svg",
       rate: 4.4,
       food: "Frango",
-      comments: "(2.583)",
+      comments: 2.583,
       price: 2,
       bonus: "Compre 1 ganhe 1",
       distance: 2.8
@@ -61,7 +61,7 @@ export const Highlights = () => {
       brandUrl:"/brands/pizza-hut.svg",
       rate: 4.6,
       food: "Pizza",
-      comments: "(24)",
+      comments: 24,
       price: 1,
       bonus: "Entrega Grátis",
       distance: 2.8
@@ -78,7 +78,7 @@ export const Highlights = () => {
           </a>
         </Link>
       </div>
-      <div className="flex gap-6 justify-between flex-wrap">
+      <div className="grid grid-cols-3 gap-4">
         {data.map((item) => (
           <HighlightsItem key={item.name} {...item}/>
         ))}

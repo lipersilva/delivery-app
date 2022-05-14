@@ -5,7 +5,7 @@ import { IconMoney, IconStar, IconTargetLocation, IconSilverware } from '../icon
 type Props = {
   name: string;
   rate: number;
-  comments: string;
+  comments: number;
   food: string;
   distance: number;
   price: number;
@@ -25,7 +25,7 @@ export const HighlightsItem = ({ name, brandUrl, comments, rate, food, price , d
           <div>
             <IconStar size={16} color="#FACD5D"/>
             <span>{rate}</span>
-            {comments}
+            ({comments})
           </div>
           <div>
             <IconSilverware size={16} color="#A3A3A4"/>
