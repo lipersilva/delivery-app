@@ -3,10 +3,13 @@ import Link from 'next/link'
 import { IconArrowRight } from '../icon-family';
 import Styles from './styles.module.css'
 import { HighlightsItem } from '../highlights-item';
+import { TypePageProps } from './types';
 
-export const Highlights = () => {
+
+export const Highlights = ({ title }:TypePageProps) => {
   const data = [
     {
+      id: "1",
       name: "Burguer King", 
       brandUrl:"/brands/burguer-king.svg",
       rate: 4.5,
@@ -17,6 +20,7 @@ export const Highlights = () => {
       distance: 4.3
     },
     {
+      id: "2",
       name: "McDonalds",
       brandUrl:"/brands/mcdonalds.svg",
       rate: 4.1,
@@ -27,6 +31,7 @@ export const Highlights = () => {
       distance: 9.0
     },
     {
+      id: "3",
       name: "Domino's Pizza",
       brandUrl:"/brands/dominos-pizza.svg",
       rate: 5.0,
@@ -37,6 +42,7 @@ export const Highlights = () => {
       distance: 2.8
     },
     {
+      id: "4",
       name: "Carrows",
       brandUrl:"/brands/carrows.svg",
       rate: 4.71,
@@ -47,6 +53,7 @@ export const Highlights = () => {
       distance: 0.3
     },
     {
+      id: "5",
       name: "KFC",
       brandUrl:"/brands/kfc.svg",
       rate: 4.4,
@@ -57,6 +64,7 @@ export const Highlights = () => {
       distance: 2.8
     },
     {
+      id: "6",
       name: "Pizza Hut",
       brandUrl:"/brands/pizza-hut.svg",
       rate: 4.6,
@@ -70,7 +78,7 @@ export const Highlights = () => {
   return (
     <div className="mb-12">
       <div className={Styles.header}>
-        <h2>Destaques</h2>
+        <h2>{title ? title : "Destaques"}</h2>
         <Link href="/destaques">
           <a>
             Ver todos
