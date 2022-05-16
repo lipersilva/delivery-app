@@ -5,7 +5,7 @@ import { Categories, FoodsList, Highlights, Navbar, PageHead, Sidebar } from '..
 const Home: NextPage = () => {
   return (
     <>
-      <PageHead title="Home" description="Sistema de Delivery" keywords="delivery, food"/>
+      <PageHead title="Nibble Restaurantes" description="Sistema de Delivery" keywords="delivery, food"/>
       <div className= "container m-auto flex">
         <Sidebar/>
         <div className= "grow p-8" >
