@@ -4,6 +4,7 @@ export type TypePageProps = {
   id: string;
   children?: ReactNode;
   product: {
+    id: string;
     name: string,
     imageUrl: string,
     deliveryFee: string,
