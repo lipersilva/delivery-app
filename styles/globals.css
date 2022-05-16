@@ -7,8 +7,14 @@
 @layer base {
   h1, h2, h3 {
     color: #182135;
-  }
+  },
+
+  h3 a{
+    color: #182135;
+  },
+  
   p, a {
     color: #626264;
   }
 }
+
