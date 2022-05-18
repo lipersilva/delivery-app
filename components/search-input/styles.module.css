@@ -1,0 +1,22 @@
+.inputSearch {
+  display: flex;
+  background-color: #F7F7F7;
+  outline: none;
+  align-items: center;
+  @apply h-12 max-w-sm rounded-lg w-full;
+}
+
+.inputSearch svg {
+  margin-left: 0.75rem;
+}
+
+.inputSearch input {
+  width: 100%;
+  border: none;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  padding: 0 0.75rem;
+  font-weight: 300;
+  background-color: transparent;
+
+}
