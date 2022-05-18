@@ -1,5 +1,5 @@
 Projeto em andamento.
-Desenvolvimento do front-end da aplicação Nibble.
+Desenvolvimento do front-end da aplicação Nibble - Sistema de Delivery.
 -> ReactJS
 -> Next
 -> Tailwind
