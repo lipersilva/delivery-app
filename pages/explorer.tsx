@@ -1,20 +1,17 @@
 import type { NextPage } from 'next'
-import {FoodsList, Highlights, Navbar, PageHead, Sidebar } from '../components'
+import {FoodsList, Highlights, Navbar, PageHead, PageTemplate, Sidebar } from '../components'
 
 
 const Explorer: NextPage = () => {
   return (
-    <>
-      <PageHead title="Explorar Restaurantes" description="Página Explorar - Sistema de Delivery" keywords="delivery, food"/>
-      <div className= "container m-auto flex">
-        <Sidebar/>
-        <div className= "grow p-8" >
-          <Navbar/>
-          <Highlights title="Restaurantes próximos"/>
-          <FoodsList/>
-        </div>
-      </div>
-    </>
+    <PageTemplate
+      title="Explorar - Categoria de Restaurante" 
+      description="Página Explorar - Sistema de Delivery" 
+      keywords="delivery, food"
+    >
+      <Highlights title="Restaurantes próximos"/>
+      <FoodsList/>
+    </PageTemplate>
   )
 }
 

@@ -1,22 +1,16 @@
 import type { NextPage } from 'next'
-import { FoodItem, Navbar, PageHead, Sidebar } from '../../components'
+import { FoodItem, PageTemplate } from '../../components'
 import { TypeParams, TypePageProps} from './types'
 
 function Categories({id, children, product}:TypePageProps) {
   return (
-    <>
-      <PageHead 
-        title={`${product.name} - Restaurante XPTO`} 
-        description={`Descrição do ${product.name} no Restaurante XPTO`} 
-        keywords="delivery, food"/>
-      <div className= "container m-auto flex">
-        <Sidebar/>
-        <div className= "grow p-8" >
-          <Navbar/>
-          <FoodItem {...product} />
-        </div>
-      </div>
-    </>
+    <PageTemplate
+      title={`${product.name} - Restaurante XPTO`}
+      description={`Descrição do ${product.name} no Restaurante XPTO`} 
+      keywords={`${product.name}, Restaurante XPTO, XPTO`}
+    >      
+      <FoodItem {...product} />
+    </PageTemplate>
   )
 }
 
