@@ -26,7 +26,7 @@ export const Sidebar = () => {
           </Link>
         </li>
         <li>
-          <Link href="/explorar">
+          <Link href="/explorer">
             <a>
               <span><IconBase iconName="feed" color="#A3A3A4" /></span>
               
