@@ -1,7 +1,7 @@
 import { NextPage } from "next";
 import { DetailsItem, FoodsList, Navbar, PageHead, Sidebar } from "../components";
 
-import Styles from './restaurant.module.css'
+import Styles from './restaurants/restaurant.module.css'
 
 const Restaurant:NextPage = () => {
   return (
