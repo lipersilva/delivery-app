@@ -4,8 +4,42 @@
   margin-bottom: 3rem;
 }
 
-.inputSearch {
-  background-color: #F7F7F7;
-  outline: none;
-  @apply leading-6 h-12 max-w-sm rounded-lg w-full;
+.navbar ul {
+  display: flex; 
+  gap: 1rem;
+}
+
+.navbar li {
+  display: flex;
+  align-items: center;
+}
+
+.nav a {
+  display:flex;
+  align-items: center;
+}
+
+.nav a svg:first-child {  
+  margin-right: 1rem;
+}
+
+.nav a svg:last-child {
+  margin-left: 1rem;
+}
+
+.filterButton, .cartButton {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filterButton {
+  background-color: #503E9D; 
+}
+
+.cartButton {
+  background-color: #FB6D3A;
 }
