@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import {FoodsList, Highlights, Navbar, PageHead, PageTemplate, Sidebar } from '../components'
+import {FoodsList, Highlights,PageTemplate } from '../components'
 
 
 const Explorer: NextPage = () => {
@@ -15,4 +15,4 @@ const Explorer: NextPage = () => {
   )
 }
 
-export default Explorer
+export default Explorer;
