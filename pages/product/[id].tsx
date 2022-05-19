@@ -2,7 +2,7 @@ import type { NextPage } from 'next'
 import { FoodItem, PageTemplate } from '../../components'
 import { TypeParams, TypePageProps} from './types'
 
-function Categories({id, children, product}:TypePageProps) {
+function Product({id, children, product}:TypePageProps) {
   return (
     <PageTemplate
       title={`${product.name} - Restaurante XPTO`}
@@ -32,4 +32,4 @@ export async function getServerSideProps({ params}: TypeParams) {
   }
 }
 
-export default Categories
+export default Product
