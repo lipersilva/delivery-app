@@ -2,9 +2,12 @@ import Link from 'next/link';
 import React from 'react';
 import { IconTargetLocation, IconShoppingCart, IconShoppingBag, IconFilter, IconDiscount, IconArrowTopDown} from '../icon-family';
 import { SearchInput } from '../search-input';
-import Styles from './styles.module.css'
+import Styles from './styles.module.css';
+import { useFilter } from "../../stores"
 
 export const Navbar = () => {
+  const { toggleModal } = useFilter(store => store);
+
   return(
     <div className={Styles.navbar}>
       {/* <div className="flex items-center"> */}
@@ -43,7 +46,7 @@ export const Navbar = () => {
       <SearchInput/>
       <ul className="flex">
         <li>
-          <button className={Styles.filterButton}>
+          <button className={Styles.filterButton} onClick={(() => toggleModal())}>
             <IconFilter size={36} color="#ffffff"/>
           </button>
         </li>
