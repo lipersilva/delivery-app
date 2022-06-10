@@ -1,6 +1,16 @@
-import type { NextPage } from 'next'
 import { Highlights, PageTemplate } from '../../components'
-import { TypeParams, TypePageProps} from './types'
+import { ReactNode } from "react";
+
+export type TypePageProps = {
+  id: string;
+  children?: ReactNode;
+}
+
+export type TypeParams = {
+  params: {
+    id: string;
+  }
+}
 
 function Categories({id, children}:TypePageProps) {
   return (

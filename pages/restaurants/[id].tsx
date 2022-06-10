@@ -1,7 +1,19 @@
 import Image from "next/image";
 import { PageTemplate, DetailsItem, FoodsList, IconBase } from "../../components";
 import Styles from './restaurant.module.css'
-import { TypePageProps, TypeParams } from "./types";
+import { ReactNode } from "react";
+
+export type TypePageProps = {
+  id: string;
+  children?: ReactNode;
+}
+
+export type TypeParams = {
+  params: {
+    id: string;
+  }
+}
+
 
 function Restaurant({ id, children }: TypePageProps) {
   return (

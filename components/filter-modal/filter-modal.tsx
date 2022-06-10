@@ -2,8 +2,8 @@ import Styles from "./filter-modal.module.css";
 import { useFilter} from "../../stores"
 
 export const FilterModal = () => {
-  const {isOpen} = useFilter(store => store.state);
-  const {toggleModal} = useFilter(store => store);
+  const { isOpen } = useFilter(store => store.state);
+  const { toggleModal } = useFilter(store => store);
   
   return (
     <>
