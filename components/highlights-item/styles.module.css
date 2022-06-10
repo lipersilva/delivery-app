@@ -1,7 +1,11 @@
 .restaurant {
-  display: flex;
-  width: 100%;
-  max-width: 340px;
+  @apply flex w-full;
+}
+
+@media screen(md){
+  .restaurant {
+    max-width: 340px;
+  }
 }
 
 .brand {
@@ -9,7 +13,7 @@
   border-radius: 12px;
   height: 96px;
   width: 96px;
-  margin-right: 24px;
+  margin-right: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -34,13 +38,14 @@
   margin-left: 16px;
   font-size: 0.75rem;
   color: #626264;
+  line-height: 1rem;
 }
 
 .information span {
   font-weight: 700;
   margin-right: 5px;
   color: #182135;
-  line-height: 1rem;
+  /*  */
 }
 
 .information div div:first-child {

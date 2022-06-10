@@ -72,7 +72,7 @@ export const FoodsList = () => {
         <h2>Pedidos Populares</h2>
         <div>Hoje</div>
       </div>
-      <div className="flex gap-6 justify-between flex-wrap">
+      <div className={Styles.container}>
         {data.map((item) => (
           <FoodItem key={item.name} {...item}/>
         ))}

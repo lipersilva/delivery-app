@@ -86,7 +86,7 @@ export const Highlights = ({ title }:TypePageProps) => {
           </a>
         </Link>
       </div>
-      <div className="grid grid-cols-3 gap-4">
+      <div className={Styles.container}>
         {data.map((item) => (
           <HighlightsItem key={item.name} {...item}/>
         ))}

@@ -7,11 +7,17 @@ import { TypePageProps } from "./types";
 
 export const FoodItem = ({ ...props}:TypePageProps ) => {
   return(
-    <div>
+    <div className={Styles.item}>
       <Link href={`/product/${props.id}`}>
         <a>
           <div className={Styles.thumb}>
-            <Image src={props.imageUrl} alt={props.name} width={336} height={176} loading="lazy" />
+            <Image 
+              src={props.imageUrl} 
+              alt={props.name} 
+              layout="fill" 
+              loading="lazy" 
+              
+            />
           </div>
           <div className={Styles.header}>
             <h3>{props.name}</h3>
@@ -19,7 +25,12 @@ export const FoodItem = ({ ...props}:TypePageProps ) => {
               {props.deliveryFee}
             </span>
           </div>
-          <DetailsItem rate={props.rate} reviews={props.reviews} category={props.category} deliveryTime={props.deliveryTime} />
+          <DetailsItem 
+            rate={props.rate} 
+            reviews={props.reviews} 
+            category={props.category} 
+            deliveryTime={props.deliveryTime} 
+          />
         </a>
       </Link>
     </div>

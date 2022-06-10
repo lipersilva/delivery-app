@@ -4,9 +4,17 @@
   margin-bottom: 3rem;
 }
 
-.navbar ul {
-  display: flex; 
+.navbar .nav, 
+.navbar .navButtons {
   gap: 1rem;
+}
+
+.navbar .nav {
+  @apply hidden lg:flex;
+}
+
+.navbar .navButtons {
+  @apply flex;
 }
 
 .navbar li {

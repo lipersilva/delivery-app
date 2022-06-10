@@ -22,3 +22,7 @@
 .header svg {
   margin-left: 8px;
 }
+
+.container {
+  @apply grid grid-cols-3 gap-4;
+}

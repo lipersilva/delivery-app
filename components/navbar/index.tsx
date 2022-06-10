@@ -16,7 +16,7 @@ export const Navbar = () => {
               <Link href="" >
                 <a>
                   <IconTargetLocation size={24} color="#503E9D"/>
-                  San Francisco, California
+                  Francisco
                   <IconArrowTopDown size={16} color="#000000"/>
                 </a>
               </Link>
@@ -44,7 +44,7 @@ export const Navbar = () => {
         </ul>
       {/* </div> */}
       <SearchInput/>
-      <ul className="flex">
+      <ul className={Styles.navButtons}>
         <li>
           <button className={Styles.filterButton} onClick={(() => toggleModal())}>
             <IconFilter size={36} color="#ffffff"/>

@@ -60,7 +60,7 @@ export const Categories = () => {
           </a>
         </Link>
       </div>
-      <div className="flex gap-8 justify-between">
+      <div className={Styles.container}>
         {categories.map((category)=>(
           <Category key={category.name} {...category} /> 
         ))}
