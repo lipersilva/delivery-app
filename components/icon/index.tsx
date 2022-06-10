@@ -11,7 +11,8 @@ import {
   IconGear, 
   IconMail, 
   IconHome,
-  IconArrowTopDown
+  IconArrowTopDown,
+  IconHeart
 } from "../icon-family";
 
 type IconBaseProps = {
@@ -62,6 +63,10 @@ export const IconBase = ({iconName, size, color}: IconBaseProps):JSX.Element => 
       break;
     case "arrowTopDown":
       IconComponent = <IconArrowTopDown size={size} color={color}/>;
+      break;
+
+    case "heart":
+      IconComponent = <IconHeart size={size} color={color}/>;
       break;
   
     default: 
