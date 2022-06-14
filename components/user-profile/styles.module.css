@@ -1,6 +1,5 @@
 .userProfile{
-  display: flex; 
-  justify-content: space-between;
+  @apply flex justify-between
 }
 
 .userData{
@@ -20,7 +19,7 @@
 }
 .userData p {
   line-height: 1rem;
-  font-size: 0.68rem;
+  font-size: 0.75rem;
   color: #626264;
   margin-bottom: 0;
 }
@@ -31,7 +30,7 @@
   justify-content: center;
 }
 
-@media screen(md) {
+@media screen(lg) {
   .button, .userData {
     @apply flex ;
   }

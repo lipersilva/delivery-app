@@ -1,10 +1,11 @@
 .sidebar {
   max-height: 1024px;
   background-color: #F7F7F7;
-  @apply flex flex-col rounded-3xl w-full;
+  max-width: 112px;
+  @apply  flex flex-col rounded-3xl;
 }
 
-@media screen(md) {
+@media screen(lg) {
   .sidebar {
     width: 100%;
     max-width: 304px;
@@ -23,20 +24,24 @@
 .header h3 {
   font-size: 1.125rem;
   line-height: 1.5rem;
-  font-weight: 700;;
+  font-weight: 700;
   color: #000000;
   padding-left:15px;
-  @apply hidden md:block;
+  @apply hidden lg:block;
 }
+
+.footer {
+  padding: 32px;
+}
+
+.menu {
+  @apply grow;
+  padding: 0 28px;
+ }
 
 .header p{
   color: #000000;
   @apply text-xl leading-6;
-}
-
-.menu {
- @apply grow;
- padding: 0 15px;
 }
 
 .menu li {
@@ -51,11 +56,11 @@
 }
 
 .menu svg {
-  @apply md:mr-6
+  @apply lg:mr-6
 }
 
 .menu span {
-  @apply hidden md:block;
+  @apply hidden lg:block;
 }
 
 .menu li:hover {
@@ -71,6 +76,3 @@
   color: white;
 }
 
-.footer {
-  padding: 32px;
-}
