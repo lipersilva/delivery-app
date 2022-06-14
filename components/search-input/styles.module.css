@@ -3,7 +3,7 @@
   background-color: #F7F7F7;
   outline: none;
   align-items: center;
-  @apply h-12 max-w-sm rounded-lg w-full;
+  @apply h-12 max-w-xs rounded-lg w-full;
 }
 
 .inputSearch svg {
