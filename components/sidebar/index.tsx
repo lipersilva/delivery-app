@@ -56,7 +56,7 @@ export const Sidebar = () => {
           </Link>
         </li>
         <li>
-          <Link href="/">
+          <Link href="/settings">
             <a>
               <IconBase iconName="gear" color="#A3A3A4" />
               <span>Configurações</span>

@@ -1,0 +1,32 @@
+.container h1 {
+  @apply text-2xl font-bold mb-8;
+}
+
+.container h2 {
+  @apply text-[#626264] mb-8;
+}
+
+.container ul {
+  @apply mb-12;
+}
+
+.container li {
+  @apply text-base border-b border-[#F0F0F0];
+  @apply hover:border-b-slate-800 transition-colors;
+}
+
+.container li a {
+  @apply flex py-4 items-center;
+  @apply text-[#182135] font-bold leading-6;
+}
+
+.container li a div:first-child {
+  @apply flex flex-grow ;
+}
+
+.container li svg {
+  @apply mx-4;
+}
+
+
+
