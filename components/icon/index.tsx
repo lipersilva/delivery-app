@@ -12,7 +12,15 @@ import {
   IconMail, 
   IconHome,
   IconArrowTopDown,
-  IconHeart
+  IconHeart,
+  IconProfile,
+  IconArrowRight,
+  IconSupport,
+  IconSplitOrder,
+  IconCard,
+  IconWalletTwo,
+  IconMoney,
+  IconPaymentMethod
 } from "../icon-family";
 
 type IconBaseProps = {
@@ -64,11 +72,31 @@ export const IconBase = ({iconName, size, color}: IconBaseProps):JSX.Element => 
     case "arrowTopDown":
       IconComponent = <IconArrowTopDown size={size} color={color}/>;
       break;
-
     case "heart":
       IconComponent = <IconHeart size={size} color={color}/>;
       break;
-  
+    case "profile":
+      IconComponent = <IconProfile size={size} color={color}/>;
+      break;
+    case "arrowRight":
+      IconComponent = <IconArrowRight size={size} color={color}/>;
+      break;
+    case "support":
+      IconComponent = <IconSupport size={size} color={color}/>;
+      break;
+    case "splitOrder":
+      IconComponent = <IconSplitOrder size={size} color={color}/>;
+      break;
+    case "card":
+      IconComponent = <IconCard size={size} color={color}/>;
+      break;
+    case "paymentMethod":
+      IconComponent = <IconPaymentMethod size={size} color={color}/>;
+      break;
+    case "money":
+      IconComponent = <IconMoney size={size} color={color}/>;
+      break;
+        
     default: 
       return <IconFire size={size} color={color}/>;
   }
