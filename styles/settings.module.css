@@ -2,7 +2,7 @@
   @apply text-2xl font-bold mb-8;
 }
 
-.container h2 {
+.container p {
   @apply text-[#626264] mb-8;
 }
 
@@ -11,16 +11,17 @@
 }
 
 .container li {
-  @apply text-base border-b border-[#F0F0F0];
+  @apply text-base;
   @apply hover:border-b-slate-800 transition-colors;
 }
 
-.container li a {
-  @apply flex py-4 items-center;
+.container li button {
+  @apply border-b border-[#F0F0F0];
+  @apply flex py-4 items-center w-full;
   @apply text-[#182135] font-bold leading-6;
 }
 
-.container li a div:first-child {
+.container li button div:first-child {
   @apply flex flex-grow ;
 }
 
