@@ -18,9 +18,9 @@ import {
   IconSupport,
   IconSplitOrder,
   IconCard,
-  IconWalletTwo,
   IconMoney,
-  IconPaymentMethod
+  IconPaymentMethod,
+  IconClose
 } from "../icon-family";
 
 type IconBaseProps = {
@@ -95,6 +95,9 @@ export const IconBase = ({iconName, size, color}: IconBaseProps):JSX.Element => 
       break;
     case "money":
       IconComponent = <IconMoney size={size} color={color}/>;
+      break;
+    case "close":
+      IconComponent = <IconClose size={size} color={color}/>;
       break;
         
     default: 
