@@ -9,7 +9,7 @@ import { LocationsFilter } from './locations-filter-dropdown';
 import { PickupFilter } from './pickup-dropdrown';
 
 export const Navbar = () => {
-  const { toggleModal } = useFilter(store => store);
+  const { toggleModal } = useFilter((store) => store);
 
   return(
     <div className={Styles.navbar}>
